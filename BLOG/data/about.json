@@ -1,0 +1,22 @@
+{
+  "label": "ABOUT",
+  "title": "关于我",
+  "description": "这里可以写你的个人介绍。",
+  "sections": [
+    {
+      "id": "about-record",
+      "title": "这个博客记录什么",
+      "content": "这里可以写你的学习方向、项目记录和技术总结。"
+    },
+    {
+      "id": "about-direction",
+      "title": "当前学习方向",
+      "content": "这里可以列出你正在学习或长期关注的主题。"
+    },
+    {
+      "id": "about-contact",
+      "title": "联系方式",
+      "content": "这里可以放你的邮箱、主页或其他联系方式。"
+    }
+  ]
+}
