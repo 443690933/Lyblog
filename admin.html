@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>内容管理 - 我的学习记录</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="admin">
+  <div class="app-layout">
+    <aside class="site-sidebar">
+      <div class="brand-block">
+        <a class="brand" href="index.html" aria-label="学习记录首页">
+          <span class="brand-mark" aria-hidden="true">学</span>
+          <span>学习记录</span>
+        </a>
+      </div>
+      <nav class="side-nav" aria-label="主导航">
+        <a href="index.html" data-nav="index">首页</a>
+        <a href="admin.html" data-nav="admin">管理</a>
+        <a href="about.html" data-nav="about">关于</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section class="paper" id="adminPage" aria-live="polite">
+        <p class="empty-state">正在加载管理页...</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>

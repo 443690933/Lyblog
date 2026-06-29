@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>我的学习记录</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="index">
+  <div class="app-layout">
+    <aside class="site-sidebar">
+      <div class="brand-block">
+        <a class="brand" href="index.html" aria-label="学习记录首页">
+          <span class="brand-mark" aria-hidden="true">学</span>
+          <span>学习记录</span>
+        </a>
+      </div>
+      <nav class="side-nav" aria-label="主导航">
+        <a href="index.html" data-nav="index">首页</a>
+        <a href="admin.html" data-nav="admin">管理</a>
+        <a href="about.html" data-nav="about">关于</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section class="paper" aria-labelledby="homeTitle">
+        <header class="page-header">
+          <p class="page-label">HOME</p>
+          <h1 id="homeTitle">我的学习记录</h1>
+          <p class="page-desc">记录学习笔记、项目实践、论文阅读和技术成长过程</p>
+        </header>
+
+        <section class="section-block" aria-labelledby="articleListTitle">
+          <div class="section-heading">
+            <div>
+              <h2 id="articleListTitle">文章目录</h2>
+              <p id="homeArticleCount" class="muted-text">正在加载文章...</p>
+            </div>
+          </div>
+
+          <label class="field" for="homeSearchInput">
+            <span>搜索</span>
+            <input id="homeSearchInput" type="search" placeholder="按标题、摘要或分类搜索">
+          </label>
+
+          <div class="category-panel" aria-label="分类筛选">
+            <div id="homeCategoryFilters" class="chip-list"></div>
+          </div>
+        </section>
+
+        <section id="homeArticleList" class="article-list" aria-label="文章列表"></section>
+        <p id="homeArticleEmpty" class="empty-state" hidden>暂无文章，请到管理页面添加本地文章，或在 data/articles.json 中添加静态文章。</p>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
